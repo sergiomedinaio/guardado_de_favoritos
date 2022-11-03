@@ -10,7 +10,12 @@ Vue.component('componente-padre', {
         <h3> Componente padre </h3>
         <p> {{dato_padre}} </p>
         <p> {{elemento}} </p>
-        <componente-hijo></componente-hijo>
+        <componente-hijo @clickOnButton="recibirDelHijo"></componente-hijo>
     </div>
-    `
+    `,
+    methods: {
+        recibirDelHijo: function($event) {
+            this.elemento = $event;
+        }
+    }
 })
