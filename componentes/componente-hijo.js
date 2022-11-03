@@ -5,9 +5,9 @@ Vue.component("componente-hijo", {
             elemento: "Dato del hijo"
         }
     },
-    props: ['mensajeParaElPadre'],
+    props: ['mensajeParaElPadre', 'borderLess'],
     template: `
-    <div class="hijo">
+    <div class="hijo" :class="{ withBorder: !borderLess }">
         <h3> Componente hijo </h3>
         <p> {{dato_padre}} </p>
         <p> {{elemento}} </p>

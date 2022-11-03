@@ -13,10 +13,12 @@ Vue.component('componente-padre', {
         <componente-hijo 
             @clickOnButton="recibirDelHijo"
             v-bind:mensajeParaElPadre="'Todo ok'"
+            v-bind:borderLess="true"
         ></componente-hijo>
         <componente-hijo 
             @clickOnButton="recibirDelHijo"
             v-bind:mensajeParaElPadre="'Todo masomenos'"
+            v-bind:borderLess="false"
         ></componente-hijo>
     </div>
     `,
