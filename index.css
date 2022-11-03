@@ -1,0 +1,6 @@
+.contenedor .padre {
+    background-color: rgb(228, 124, 86);
+    border-radius: 1rem;
+    border: 1px solid #000;
+    padding: 1rem;
+}
