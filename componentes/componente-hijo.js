@@ -5,6 +5,7 @@ Vue.component("componente-hijo", {
             elemento: "Dato del hijo"
         }
     },
+    props: ['mensajeParaElPadre'],
     template: `
     <div class="hijo">
         <h3> Componente hijo </h3>
@@ -15,7 +16,7 @@ Vue.component("componente-hijo", {
     `,
     methods: {
         enviarHaciaPadre: function() {
-            this.$emit("clickOnButton", "Esto lo estamos cambiando desde el hijo");
+            this.$emit("clickOnButton", this.mensajeParaElPadre);
             console.log("enviarHaciaPadre");
         }
     }
