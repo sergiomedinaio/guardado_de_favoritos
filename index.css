@@ -1,6 +1,14 @@
-.contenedor .padre {
-    background-color: rgb(228, 124, 86);
+.contenedor .padre,
+.contenedor .hijo {
     border-radius: 1rem;
     border: 1px solid #000;
     padding: 1rem;
+}
+
+.contenedor .padre {
+    background-color: rgb(228, 124, 86);
+}
+
+.contenedor .hijo {
+    background-color: rgb(60, 207, 171);
 }
